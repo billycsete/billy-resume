@@ -1,0 +1,38 @@
+// =================================================
+//
+// Sidebar - Profile
+//
+// =================================================
+
+.sidebar-profile {
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+	@include selfclear;
+
+	.sidebar-details {
+		position: relative;
+		z-index: 10;
+		padding: 15px 0 15px 25px;
+		background: $grey;
+
+		.name {
+			display: none;
+		}
+
+		ul {
+			margin-bottom: 0;
+			line-height: 1.8rem;
+		}
+	}
+
+	@include media(medium) {
+		.sidebar-details {
+			background: $light-grey;
+
+			.name {
+				display: block;
+			}
+		}
+	}
+}

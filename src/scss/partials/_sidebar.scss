@@ -1,0 +1,30 @@
+// =================================================
+//
+// Sidebar
+//
+// =================================================
+
+.sidebar {
+	@include selfclear;
+	position: relative;
+	z-index: 100;
+	background-color: $grey;
+	color: $white;
+
+	a {
+		color: $white;
+		text-decoration: none;
+	}
+
+	@include media(medium) {
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 240px;
+		height: 100%;
+	}
+
+	@include media(large) {
+		width: 300px;
+	}
+}
